@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime as dt
 import pandas as pd
 import random
 import smtplib
