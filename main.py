@@ -1,5 +1,5 @@
 from datetime import datetime
-import pandas
+import pandas as pd
 import random
 import smtplib
 import os
