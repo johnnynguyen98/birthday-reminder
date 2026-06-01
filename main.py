@@ -23,7 +23,7 @@ def create_letter(name):
     with open(f"letter_templates/letter_{random.randint(1,3)}.txt","r") as letter:
         letter_template = letter.read()
         letter_content = letter_template.replace("[NAME]",name)
-        letter_content = letter_content.replace("Angela","Johnny")
+        letter_content = letter_content.replace("Your friend","Johnny")
     return letter_content
 
 def send_email(name):
