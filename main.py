@@ -29,7 +29,7 @@ def create_letter(name):
 def send_email(name):
     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
         connection.starttls()
-        connection.login(user=MY_EMAIL, password=PASSWORD)
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         connection.sendmail(from_addr=MY_EMAIL,
                             to_addrs=birthday_people[name],
                             msg=f"Subject:Happy Birthday!\n\n{create_letter(name)}"
